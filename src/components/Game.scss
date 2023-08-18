@@ -1,0 +1,97 @@
+.game-div {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.game-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.scenario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .choice-container {
+    width: 130px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+  }
+}
+
+.choices {
+  display: flex;
+  gap: 15px;
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 560px) {
+  .game-div {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .scenario {
+    .choice-container {
+      width: 100px;
+      height: 100px;
+      font-size: 60px;
+    }
+  }
+
+  .game-field {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .choices {
+    flex-direction: column;
+    div {
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+    }
+  }
+}
